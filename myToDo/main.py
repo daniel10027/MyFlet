@@ -67,7 +67,7 @@ class Hero(ft.SafeArea):
             self.item.update()
 
     # Méthode pour basculer entre le mode sombre et clair
-    def switch(self, e) -> None:
+    def switch(self, e) :
         border_color = _light if self.page.theme_mode == ft.ThemeMode.DARK else _dark
         self.page.theme_mode = ft.ThemeMode.LIGHT if self.page.theme_mode == ft.ThemeMode.DARK else ft.ThemeMode.DARK
         self.toogle.icon = ft.icons.LIGHT_MODE_ROUNDED if self.page.theme_mode == ft.ThemeMode.DARK else ft.icons.DARK_MODE_ROUNDED
